@@ -1,0 +1,79 @@
+.CarrosBody{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;   
+    background-color: rgb(200, 200, 200);
+    margin-top: 3vh;
+}
+
+.FormUser{  
+    width: 95%;
+}   
+
+.InputUser{
+    background-color: rgb(220, 220, 220);
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    margin-left: 0%;
+    width: 30%;
+    height: 3vh;
+}
+
+.TablaCarros{
+    border: 2px solid;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 75vh;
+    display: block;
+    border-collapse: collapse;
+    table-layout: fixed;    
+    width: 95%;
+    text-align: center; 
+    background-color: rgb(200, 200, 200);
+    margin-bottom: 1%;
+}
+
+.TablaCarros th{
+    background-color: rgb(140, 204, 43);
+    height: 4vh;
+    width: 5%;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+}
+
+.TablaCarros td{
+    height: 3vh;
+    width: 5%;
+}
+
+.TablaCarros tr:hover{
+  background-color: rgb(102, 148, 32);
+  cursor: pointer;    
+}
+
+tr:nth-child(even){background-color: rgb(129, 129, 129)}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
