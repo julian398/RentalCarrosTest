@@ -28,13 +28,14 @@ export const Carros = () => {
     const [CurrentCarro, setCurrentCarro] = useState<Cars>();
 
     useEffect(()=>{
+        console.log("Updating")
         fetch("http://localhost:3333/Cars").then(res => res.json()).then(json => setData(json))
     },[]);
 
     
     return (
         <div className='CarrosBody'>
-            {CurrentCarro ? <Carro Cars = {CurrentCarro}></Carro> : null }
+            {CurrentCarro ? <Carro Cars = {CurrentCarro} setData = {setData} setCurrentCarro = {setCurrentCarro}></Carro> : null }
             <form className='FormUser'>
                 <input placeholder='Ingrese su busqueda' className='InputUser' onChange={(e) => setSearch(e.target.value)}></input>
             </form> 
